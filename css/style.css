@@ -36,17 +36,20 @@ body{
     position: relative;
     min-height: 100%;
     font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 .navbar{
     position: fixed;
     top: 0;
     width: 100%;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 50px;
     border: 0;
+    z-index: 1000;
 }
 
 .coloredHeader{
@@ -169,6 +172,8 @@ button{
 
 .brands{
     background-color: white;
+    width: 90%;
+    margin: auto;
 }
 
 .heading{
@@ -176,7 +181,7 @@ button{
 }
 
 .brand-logos{
-    padding: 20px 0px 80px 0px;
+    padding: 10px 0px 80px 0px;
 }
 
 .brand-logos .row, .intro .row{
@@ -184,29 +189,89 @@ button{
     margin: auto;
 }
 
-
-/* new arrivals css */
-
-.arrivals, .featured, .byBrand{
-    width: 90%;
-    margin: 50px auto;
+/* swiper styles */
+.swiper-wrapper .feat{
+    width: 90% !important; 
+    margin: auto;
 }
+
+
+.feat{
+    display: flex;
+    align-items: center;
+    /* width: 90% !important; */
+}
+
+.swiper-main{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.arrivals-container{
+    position: relative;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    row-gap: 50px;
+    overflow-x: hidden;
+    padding: 50px auto;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.swiper-button-prev, .swiper-button-next{
+    border-radius: 50%;
+    color: #000 !important;
+    height: 20px !important;
+    width: 20px !important;
+    padding: 0px 40px;
+}
+
+.swiper-button-prev{
+    left: 0 !important;
+}
+
+.swiper-button-next{
+    right: 0 !important;
+}
+
+/* new arrivals and featured products css */
+
+.arrivals .row, .featured, .byBrand{
+    width: 90%;
+    margin: 50px auto 20px auto;
+}
+
+
+.viewall{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6em;
+}
+
 
 .item-container{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     row-gap: 50px;
 }
 
-.item .picture{
-    width: 18.75em;
-    height: 25em;
+.swiper-slide{
     /* border: 1px solid black; */
-    
+    width: 20%;
 }
 
-.item .picture img{
+.swiper-slide .picture, .item .picture{
+    width: 100%;
+    height: 18em;
+    align-self: stretch;
+}
+
+.swiper-slide .picture img, .item .picture img{
     width: 100%;
     max-height: 100%;
 }
@@ -220,7 +285,6 @@ button{
     font-size: var(--font-sm);
 }
 
-/* featured */
 
 .brand-item-container{
     margin-top: 30px;
