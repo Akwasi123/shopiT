@@ -23,14 +23,17 @@ const swiper = new Swiper('.swiper-container', {
     spaceBetween: 100,
     loop: true,
     speed: 300,
-    autoplay: true
+    autoplay: {
+        delay: 8000
+    }
+    
 });
 
 const arrivalSwiper = new Swiper('.arrivals-container', {
     direction: 'horizontal',
     spaceBetween: 22,
     loop: true,
-    speed: 300,
+    speed: 1000,
     autoplay: true,
     navigation: {
         nextEl: '.swiper-button-next',
