@@ -4,10 +4,10 @@ header = document.querySelector(".navbar");
 
 window.onscroll = function () {
   scrollFunction();
-  // headerFunction();
+  headerFunction();
 };
 
-function scrollFunction() {
+function headerFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     header.classList.add("coloredHeader");
   } else {
@@ -15,6 +15,22 @@ function scrollFunction() {
   }
 }
 
+const scrollToTop = document.querySelector('.scroll');
+
+
+function scrollFunction(){
+    if(document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+        scrollToTop.style.display = 'block';
+    }
+    else{
+        scrollToTop.style.display = 'none';
+    }
+}
+
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 const swiper = new Swiper('.swiper-container', {

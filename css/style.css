@@ -249,7 +249,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 6em;
+    width: 5.3em;
+    text-decoration: none;
+    color: var(--dark-text);
 }
 
 
@@ -406,6 +408,13 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+
+.scroll{
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 999;
 }
 
 /* footer */
