@@ -106,6 +106,10 @@ nav ul li a:hover{
     border-bottom: 1px solid var(--white-text);
 }
 
+nav ul li:last-child{
+    display: none;
+}
+
 #signIn{
     text-decoration: none;
     color: var(--dark-text);
@@ -529,6 +533,12 @@ footer{
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
+    }
+
+    :root{
+        --font-lg: 2.5rem;
+        --font-md: 1.5rem;
+        --font-sm: 1rem;
     }
 
     .navbar{
