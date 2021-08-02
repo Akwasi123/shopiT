@@ -1,3 +1,12 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
 
 header = document.querySelector(".navbar");
@@ -41,7 +50,24 @@ const swiper = new Swiper('.swiper-container', {
     speed: 300,
     autoplay: {
         delay: 8000
-    }
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+        slidesPerView: 5,
+        spaceBetween: 40
+        }
+    },
     
 });
 
@@ -49,7 +75,7 @@ const arrivalSwiper = new Swiper('.arrivals-container', {
     direction: 'horizontal',
     spaceBetween: 22,
     loop: true,
-    speed: 1000,
+    speed: 800,
     autoplay: true,
     navigation: {
         nextEl: '.swiper-button-next',
