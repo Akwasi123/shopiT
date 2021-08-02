@@ -99,12 +99,12 @@ const arrivalSwiper = new Swiper('.arrivals-container', {
         },
         // when window width is >= 480px
         480: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30
         },
         // when window width is >= 640px
         640: {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 40
         }
     },
