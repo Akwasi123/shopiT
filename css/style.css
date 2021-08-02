@@ -59,7 +59,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
     /* border: 1px solid black; */
 }
 
@@ -538,6 +538,9 @@ footer{
         /* background-color: #000; */
     }
 
+    .brand{
+        display: none;
+    }
 
     nav ul {
         position: fixed;
@@ -620,7 +623,7 @@ footer{
     }
 
     .item-container{
-        grid-template-columns: repeat(auto-fit, 370px);
+        grid-template-columns: repeat(auto-fit, 335px);
         align-items: center;
         /* border: 1px solid black; */
     }
@@ -632,7 +635,7 @@ footer{
     }
 
     .brand-item-container{
-        grid-template-columns: repeat(auto-fit, 183px);
+        grid-template-columns: repeat(auto-fit, 165px);
         margin: auto;
         align-items: center;
         justify-items: center;
