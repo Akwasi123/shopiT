@@ -19,7 +19,7 @@ function closeMenu() {
 
 
 
-header = document.querySelector(".navbar");
+header = document.querySelector(".nav-content");
 
 window.onscroll = function () {
   scrollFunction();
