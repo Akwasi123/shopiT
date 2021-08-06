@@ -11,6 +11,14 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+nav ul li a:hover{
+    border-bottom: 1px solid #33B247;
+}
+
+.linkActive{
+    border-bottom: 2px solid #33B247;
+}
+
 button{
     cursor: pointer;
 }
@@ -185,11 +193,104 @@ button{
     height: 100%;
     width: 25em;
     margin-bottom: 0;
+    padding: 0 20px;
     box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.185);
 }
 
+.mainItem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 15em;
+    width: 100%;
+    padding: 0 30px;
+}
 
+.mainItem img{
+    width: 100%;
+    padding: 0 20px;
+}
 
+.smallDispContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 23em;
+    margin-top: 40px;
+}
 
+.smallDisp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 5em;
+    height: 5em;
+    padding: 10px;
+}
+
+.smallDisp img{
+    width: 100%;
+}
+
+.about, .about p{
+    margin: 15px 0;
+}
+
+.tab{
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-right, .right{
+    text-align: right;
+}
+
+.tab button{
+    padding: 20px 0px 20px 0;
+    background: transparent;
+    font-size: var(--font-sm);
+    outline: none;
+    border: 0;
+    line-height: 0;
+}
+
+.tab button.active{
+    border-bottom: 4px solid #33B247;
+}
+
+.tabcontent{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.left p, .right p{
+    margin: 10px 0;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B23338;
+    width: 3em;
+    height: 3em;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.185);
+}
+
+.right button{
+    padding: 15px;
+    background-color: #33B247;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#reviews{
+    color: grey;
+}
 
                                             

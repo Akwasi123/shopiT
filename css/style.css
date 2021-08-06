@@ -40,7 +40,13 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+}
 
+.linkActive{
+    border-bottom: 2px solid #fff;
+}
 
 /* intro css */
 

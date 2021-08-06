@@ -4,32 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/navbar.css">
-        <link rel="stylesheet" href="../css/shop.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+        <title>ShopIt | Find Your Favorite Items </title>
+        <link text-dark rel="stylesheet" href="../css/navbar.css">
+        <link text-dark rel="stylesheet" href="../css/shop.css">
+        <link text-dark rel="preconnect" href="https://fonts.googleapis.com" />
+        <link text-dark rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link text-dark
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
         />
     </head>
     <body>
         <!-- navigation bar -->
-    <div class="navbar borderBottom bg-white">
-        <div class="nav-content">
+    <div class="navbar borderBottom bg-white ">
+        <div class="nav-content ">
             <div class="logo">
               <img src="../img/open-source-black.png" alt="" />
-              <p class="brand">ShopiT</p>
+              <p class="brand text-dark">ShopiT</p>
             </div>
    
             <nav>
               <ul>
-                <li><a href="#home" class="link">Home</a></li>
-                <li><a href="" class="link">Shop</a></li>
-                <li><a href="" class="link">Blog</a></li>
-                <li><a href="" class="link">Hot Sale</a></li>
-                <li><a href="" class="link">Sign In</a></li>
+                <li><a href="index.html" class="link text-dark">Home</a></li>
+                <li class="linkActive"><a href="shop.html" class="link text-dark">Shop</a></li>
+                <li><a href="" class="link text-dark">Blog</a></li>
+                <li><a href="" class="link text-dark">Hot Sale</a></li>
+                <li><a href="" class="link text-dark">Sign In</a></li>
               </ul>
             </nav>
   
@@ -254,6 +254,59 @@
             <!-- item display content -->
             <div class="display">
                 <!-- <p>Nothing to show here</p> -->
+                <div class="mainItem">
+                    <img src="../img/580b57fbd9996e24bc43bf55.png" alt="">
+                </div>
+
+                <!-- smaller displays -->
+                <div class="smallDispContainer">
+                    <div class="smallDisp">
+                        <img src="../img/580b57fbd9996e24bc43bf55.png" alt="">
+                    </div>
+                    <div class="smallDisp">
+                        <img src="../img/580b57fbd9996e24bc43bf55.png" alt="">
+                    </div>
+                    <div class="smallDisp">
+                        <img src="../img/580b57fbd9996e24bc43bf55.png" alt="">
+                    </div>
+                    <div class="smallDisp">
+                        <img src="../img/580b57fbd9996e24bc43bf55.png" alt="">
+                    </div>
+                </div>
+
+                <!-- about product section -->
+                <div class="about">
+                    <p>Product Name</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus odit velit accusamus placeat optio.</p>
+                </div>
+
+                <!-- details and reviews -->
+                <div class="tab">
+                    <button class="tablink text-darks" onclick="openCity(event, 'details')" id="defaultOpen">Details</button>
+                    <button class="tablink text-darks t-right" onclick="openCity(event, 'reviews')">Reviews</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="details" class="tabcontent">
+                    <div class="left">
+                        <p>Size:</p>
+                        <p>Color:</p>
+                        <div class="like">
+                            <img src="../img/Icon awesome-heart.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <p>XL</p>
+                        <p>Black</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div id="reviews" class="tabcontent">
+                    <p><em>No reviews yet</em></p>
+                </div>
             </div>
         </section>
     </main>

@@ -26,6 +26,14 @@
     background-color: #fff;
 }
 
+.text-dark{
+    color: var(--dark-text);
+}
+
+.text-white{
+    color: var(--white-text);
+}
+
 .nav-content{
     display: flex;
     align-items: center;
@@ -62,12 +70,12 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: var(--dark-text);
+    color: var(--white-text);
 }
 
-nav ul li a:hover{
-    border-bottom: 1px solid #33B247;
-}
+
+
+
 
 nav ul li:last-child{
     display: none;
@@ -85,7 +93,6 @@ nav ul li:last-child{
 }
 
 .brand{
-    color: var(--dark-text);
     font-size: var(--font-md);
 }
 
