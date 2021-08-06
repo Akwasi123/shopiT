@@ -102,12 +102,36 @@ button{
     
 }
 
-.search{
+.searchBar{
+    display: flex;
+    align-items: center;
     width: 100%;
     box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.185);
-    padding: 15px;
+    padding: 10px 50px;
     border: 0;
+    background-image: url("/img/Icon\ awesome-search.png");
+    background-repeat: no-repeat;
+    background-position: left 20px center, center right 20px;
+    background-size: 1.2em;   
 }
+
+.searchIcon{
+    display: none;
+    margin-top: 8px;
+    width: 1.2em;
+}
+
+.searchIcon img{
+    width: 100%;
+}
+
+.search{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 50px 10px 20px; 
+}
+
 
 .grid{
     display: grid;

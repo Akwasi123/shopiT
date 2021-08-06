@@ -104,8 +104,10 @@
             <!-- middle content -->
             <div class="middle">
                 <!-- searchbar -->
-                <input type="text" name="" id="" class="search" placeholder="Search for something...">
-
+                <div class="searchBar">
+                    <input type="text" name="" id="" class="search" placeholder="Search for something..." oninput="checkIfTyping();">
+                    <a href="" class="searchIcon"><img src="../img/Icon material-cancel.png" alt="" ></a>
+                </div>
                 <!-- grid of items -->
                 <div class="grid">
                     <div class="gridItem">
@@ -256,5 +258,6 @@
         </section>
     </main>
   
+    <script src="../js/owl.js"></script>
     </body>
     </html>
