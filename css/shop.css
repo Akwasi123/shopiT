@@ -151,6 +151,7 @@ button{
 }
 
 .gridItem{
+    cursor: pointer;
     width: 15em;
     height: 21em;
     border: 1px solid #B23338;
@@ -194,16 +195,19 @@ button{
     width: 25em;
     margin-bottom: 0;
     padding: 0 20px;
+    /* border: 1px solid black; */
     box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.185);
 }
 
 .mainItem{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 15em;
+    height: 18em;
     width: 100%;
     padding: 0 30px;
+    /* border: 1px solid black; */
 }
 
 .mainItem img{
@@ -216,18 +220,19 @@ button{
     align-items: center;
     justify-content: space-between;
     width: 23em;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .smallDisp{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     border-radius: 5px;
-    width: 5em;
-    height: 5em;
-    padding: 10px;
+    width: 4em;
+    height: 4em;
+    padding: 5px;
+    background-color: rgba(192, 189, 189, 0.37);
+    box-shadow: 0px 3px 10px rgba(128, 128, 128, 0.185);
 }
 
 .smallDisp img{
@@ -289,8 +294,11 @@ button{
     border: none;
 }
 
-#reviews{
+#reviews, #nothing{
     color: grey;
 }
 
+#nothing{
+    /* padding: 20px 0; */
+}
                                             
