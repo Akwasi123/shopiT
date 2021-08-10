@@ -51,30 +51,34 @@ var currentItem;
 let nothingText = document.querySelector('.nothing')
 
 
-console.log(smallDisplay)
+// console.log(smallDisplay)
 
 // for(var i = 0; i < gridItems.length; i++){
 //     gridItems[i].addEventListener('click', getClicked(gItem));
 // }
 
-window.onload = function(){
+window.onload = clearDisp();
+
+function clearDisp(){
     nothingText.innerText = 'No item selected';
-    display.childNodes[5].style.display = 'none';
-    display.childNodes[9].style.display = 'none';
+    display.childNodes[7].style.display = 'none';
     display.childNodes[13].style.display = 'none';
     display.childNodes[17].style.display = 'none';
     display.childNodes[21].style.display = 'none';
-
+    display.childNodes[25].style.display = 'none';
+    itemDisplay.style.display = 'none';
+    
     // console.log(display.childNodes[21])
 }
 
 function getItem(gItem){
-    display.childNodes[5].style.display = 'flex'
-    display.childNodes[9].style.display = 'flex';
-    display.childNodes[13].style.display = 'block';
-    display.childNodes[17].style.display = 'flex';
+    display.childNodes[7].style.display = 'flex'
+    display.childNodes[13].style.display = 'flex';
+    display.childNodes[17].style.display = 'block';
     display.childNodes[21].style.display = 'flex';
+    display.childNodes[25].style.display = 'flex';
     nothingText.innerText = '';
+    itemDisplay.style.display = 'flex';
     itemDisplay.src = gItem.children[0].children[0].src;
     smallDisplay[0].src = gItem.children[0].children[0].src;
     smallDisplay[1].src = gItem.children[0].children[0].src;
